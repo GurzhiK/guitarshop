@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guitar Shop</title>
+	<link rel="stylesheet" href="libs/modal/modal.css" >
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/chief-slider.css">
+</head>
+<body>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+		  const slider = new ChiefSlider('.slider', {
+			loop: false
+		  });
+		});
+	  </script>
+	<header class="header">
+		<div class="container">
+			<nav class="header__nav nav">
+				<ul class="nav__list">
+					<li class="nav__item"><button class="but1"><a href="#" id="open_pop_up" class="nav__link">Акции</a></button></li>
+					<div class="pop_up" id="pop_up">
+						<div class="pop_up_container">
+							<div class="pop_up_body" id="pop_up_body">
+								<h3>Акций нет</h3>
+								<div class="pop_up_close" id="pop_up_close">&#10006</div>
+							</div>
+						</div>
+					</div>
+					<li class="nav__item"><button class="but1"><a href="#" id="open_pop_up1" class="nav__link">Доставка</a></button></li>
+					<div class="pop_up" id="pop_up1">
+						<div class="pop_up_container">
+							<div class="pop_up_body" id="pop_up_body1">
+								<h3>Доставка действует по всей России</h3>
+								<div class="pop_up_close" id="pop_up_close1">&#10006</div>
+							</div>
+						</div>
+					</div>
+					<li class="nav__item"><button class="but1"><a href="#" id="open_pop_up2" class="nav__link">Работа в компании</a></button></li>
+					<div class="pop_up" id="pop_up2">
+						<div class="pop_up_container">
+							<div class="pop_up_body" id="pop_up_body2">
+								<h3>Нет свободных вакансий</h3>
+								<div class="pop_up_close" id="pop_up_close2">&#10006</div>
+							</div>
+						</div>
+					</div>
+					<li class="nav__item"><button class="but1"><a href="#absolut" class="nav__link">Контакты</a></button></li>
+				</ul>
+				<div class="header__cart cart" tabindex="0">
+					<div class="cart__text">
+						Корзина
+						<span class="cart__quantity">0</span>
+					</div>
+					<div class="cart-content">
+						<ul class="cart-content__list" data-simplebar>
+						</ul>
+						<div class="cart-content__bottom">
+							<div class="cart-content__fullprice">
+								<span>Итого:</span>
+								<span class="fullprice"></span>
+							</div>
+							<button class="cart-content__btn btn" data-graph-path="modal" data-graph-animation="fadeInUp">Перейти в корзину</button>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="containerg">
+		<div class="slider">
+		  <div class="slider__container">
+			<div class="slider__wrapper">
+			  <div class="slider__items">
+				<div class="slider__item">
+				  <!-- Контент 1 слайда -->
+				  <img src="img/slide1.jpg" alt="slide1" class="slider__img">
+				</div>
+				<div class="slider__item">
+				  <!-- Контент 2 слайда -->
+				  <img src="img/slide2.jpg" alt="slide2" class="slider__img">
+				</div>
+				<div class="slider__item">
+				  <!-- Контент 3 слайда -->
+				  <img src="img/slide3.jpg" alt="slide3" class="slider__img">
+				</div>
+				<div class="slider__item">
+				  <!-- Контент 4 слайда -->
+				  <img src="img/slide4.jpg" alt="slide4" class="slider__img">
+				</div>
+				<div class="slider__item">
+				  <!-- Контент 5 слайда -->
+				  <img src="img/slide5.jpg" alt="slide4" class="slider__img">
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <a href="#" class="slider__control" data-slide="prev"></a>
+		  <a href="#" class="slider__control" data-slide="next"></a>
+		</div>
+	  </div>
+	<main class="content">
+		<div>
+			<h3 class="text_gl">Каталог Товаров</h3>
+		</div>
+		<div class="container">
+				<ul class="products-grid">
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="https://i.ibb.co/QJfqs4K/1.jpg" alt="FENDER SQUIER BULLET STRAT HT HSS BLK"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/FENDER SQUIER BULLET STRAT HT HSS BLK1.jpg" alt="FENDER SQUIER BULLET STRAT HT HSS BLK"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/FENDER SQUIER BULLET STRAT HT HSS BLK2.jpg" alt="FENDER SQUIER BULLET STRAT HT HSS BLK"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">FENDER SQUIER BULLET STRAT HT HSS BLK NOTHING ELSE</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+										/>
+									</svg>
+									4,5
+								</span>
+								<span class="product__testimonials">83 отзыва</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 888881</span>
+								<span class="product__available">В наличии: 12 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">13 599 $</span>
+								<span class="product-price__old">13 600 $</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="https://i.ibb.co/pKrG5ZJ/2.jpg" alt="FENDER SQUIER AFFINITY"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/FENDER SQUIER AFFINITY1.jpg" alt="FENDER SQUIER AFFINITY"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/FENDER SQUIER AFFINITY2.jpg" alt="FENDER SQUIER AFFINITY"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">FENDER SQUIER AFFINITY STRATOCASTER HSS LRL OLYMPIC</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+										/>
+									</svg>
+									4,7
+								</span>
+								<span class="product__testimonials">42 отзыва</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 888882</span>
+								<span class="product__available">В наличии: 15 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">23 899 $</span>
+								<span class="product-price__old">23 900 $</span>
+							</div>
+							<button class="product__btn btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="https://i.ibb.co/NnvcYhR/3.jpg" alt="IBANEZ GIO GRG121DX-BKF BLACK FLAT"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/IBANEZ GIO GRG121DX-BKF BLACK FLAT1.jpg" alt=""></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/IBANEZ GIO GRG121DX-BKF BLACK FLAT2.jpg" alt="IBANEZ GIO GRG121DX-BKF BLACK FLAT"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">IBANEZ GIO GRG121DX-BKF BLACK FLAT GENUIS CLIME</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+										/>
+									</svg>
+									4,5
+								</span>
+								<span class="product__testimonials">54 отзыва</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 888883</span>
+								<span class="product__available">В наличии: 8 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">21 599 $</span>
+								<span class="product-price__old">21 600 $</span>
+							</div>
+							<button class="product__btn btn btn">Добавить в корзину</button>
+						</article>
+					</li>				
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="https://i.ibb.co/4Tg91WL/4.jpg" alt="EPIPHONE LES PAUL STUDIO LT EBONY"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/EPIPHONE LES PAUL STUDIO LT EBONY1.jpg" alt="EPIPHONE LES PAUL STUDIO LT EBONY"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/EPIPHONE LES PAUL STUDIO LT EBONY2.jpg" alt="EPIPHONE LES PAUL STUDIO LT EBONY"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">EPIPHONE LES PAUL STUDIO LT EBONY</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+										/>
+									</svg>
+									4,6
+								</span>
+								<span class="product__testimonials">94 отзыва</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 888884</span>
+								<span class="product__available">В наличии: 9 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">19 899 $</span>
+								<span class="product-price__old">19 900 $</span>
+							</div>
+							<button class="product__btn btn btn">Добавить в корзину</button>
+						</article>
+					</li>				
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/FENDER SQUIER BULLET TREM HSS AWT.jpg" alt="FENDER SQUIER BULLET TREM HSS AWT"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/FENDER SQUIER BULLET TREM HSS AWT1.jpg" alt="FENDER SQUIER BULLET TREM HSS AWT"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/FENDER SQUIER BULLET TREM HSS AWT2.jpg" alt="FENDER SQUIER BULLET TREM HSS AWT"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">FENDER SQUIER BULLET TREM HSS AWT</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+										/>
+									</svg>
+									4,3
+								</span>
+								<span class="product__testimonials">28 отзывов</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 888885</span>
+								<span class="product__available">В наличии: 6 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">14 499 $</span>
+								<span class="product-price__old">14 500 $</span>
+							</div>
+							<button class="product__btn btn btn">Добавить в корзину</button>
+						</article>
+					</li>				
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/FENDER SQUIER BULLET MUSTANG HH BLK.jpg" alt="FENDER SQUIER BULLET MUSTANG HH BLK"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/FENDER SQUIER BULLET MUSTANG HH BLK1.jpg" alt="FENDER SQUIER BULLET MUSTANG HH BLK"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/FENDER SQUIER BULLET MUSTANG HH BLK2.jpg" alt="FENDER SQUIER BULLET MUSTANG HH BLK"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">FENDER SQUIER BULLET MUSTANG HH BLK</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+										/>
+									</svg>
+									4,4
+								</span>
+								<span class="product__testimonials">95 отзывов</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 888886</span>
+								<span class="product__available">В наличии: 18 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">14 599 $</span>
+								<span class="product-price__old">14 600 $</span>
+							</div>
+							<button class="product__btn btn btn">Добавить в корзину</button>
+						</article>
+					</li>				
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/FENDER SQUIER BULLET STRAT HT AWT.jpg" alt="FENDER SQUIER BULLET STRAT HT AWT"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/FENDER SQUIER BULLET STRAT HT AWT1.jpg" alt="FENDER SQUIER BULLET STRAT HT AWT"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/FENDER SQUIER BULLET STRAT HT AWT2.jpg" alt="FENDER SQUIER BULLET STRAT HT AWT"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">FENDER SQUIER BULLET STRAT HT AWT</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+										/>
+									</svg>
+									4,8
+								</span>
+								<span class="product__testimonials">72 отзыва</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 888887</span>
+								<span class="product__available">В наличии: 16 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">13 599 $</span>
+								<span class="product-price__old">13 600 $</span>
+							</div>
+							<button class="product__btn btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/JACKSON JS22-7 DINKY SATIN BLACK.jpg" alt="JACKSON JS22-7 DKA, AH FB - HT STN BLK"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/JACKSON JS22-7 DINKY SATIN BLACK1.jpg" alt="JACKSON JS22-7 DKA, AH FB - HT STN BLK"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/JACKSON JS22-7 DINKY SATIN BLACK2.jpg" alt="JACKSON JS22-7 DKA, AH FB - HT STN BLK"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">JACKSON JS22-7 DKA, AH FB - HT STN BLK</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+										/>
+									</svg>
+									4,1
+								</span>
+								<span class="product__testimonials">68 отзывов</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 888888</span>
+								<span class="product__available">В наличии: 19 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">28 699 $</span>
+								<span class="product-price__old">28 700 $</span>
+							</div>
+							<button class="product__btn btn btn">Добавить в корзину</button>
+						</article>
+					</li>				
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/EPIPHONE SG-Special VE Cherry.jpg" alt="EPIPHONE SG-Special VE Cherry"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/EPIPHONE SG-Special VE Cherry1.jpg" alt="EPIPHONE SG-Special VE Cherry"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/EPIPHONE SG-Special VE Cherry2.jpg" alt="EPIPHONE SG-Special VE Cherry"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">EPIPHONE SG-Special VE Cherry DELUXE EDITION</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+										/>
+									</svg>
+									5,0
+								</span>
+								<span class="product__testimonials">121 отзыв</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 888889</span>
+								<span class="product__available">В наличии: 4 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">15 899 $</span>
+								<span class="product-price__old">15 990 $</span>
+							</div>
+							<button class="product__btn btn btn">Добавить в корзину</button>
+						</article>
+					</li>				
+				</ul>
+			<div class="height"></div>
+		</div>
+	</main>
+	<footer>
+		<h3 id="absolut">Наш номер: +79185962722</h3>
+		<h3>Наша mail-почта: guitar_shop@mail.ru</h3>
+		<a href="https://vk.com/">Наш VK</a>
+	</footer>	
+	<div class="modal">
+		<div class="modal__container order-modal" role="dialog" aria-modal="true" data-graph-target="modal">
+			<div class="modal-content order-modal__content">
+				<div class="order-modal__top">
+					<h2 class="order-modal__title">Оформление заказа</h2>
+					<span class="order-modal__number">Заказ № 8545 79</span>
+				</div>
+				<div class="order-modal__info">
+					<div class="order-modal__quantity order-modal__info-item">Товаров в заказе: <span></span></div>
+					<div class="order-modal__summ order-modal__info-item">Общая сумма заказа: <span></span></div>
+					<div class="order-modal__products order-modal__info-item">
+						<button class="order-modal__btn">Состав заказа</button>
+						<ul class="order-modal__list">
+						</ul>
+					</div>
+				</div>
+				<form action="#" class="order-modal__form order">
+					<input type="hidden" name="theme" value="Обратный звонок">
+					<input type="hidden" name="admin_email[]" value="maxgraph23@gmail.com">
+					<input type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+					<label class="order__label">
+						<span class="order__text">Ваше имя</span>
+						<input type="text" name="Имя" class="order__input">
+					</label>
+					<label class="order__label">
+						<span class="order__text">Адрес доставки</span>
+						<input type="text" name="Адрес доставки" class="order__input">
+					</label>
+					<label class="order__label">
+						<span class="order__text">Номер телефона</span>
+						<input type="tel" name="Телефон" class="order__input" placeholder="+7 (___)___-__-__">
+					</label>
+					<label class="order__label">
+						<span class="order__text">Ваша mail-почта</span>
+						<input type="email" name="Email" class="order__input" placeholder="post@gmail.com">
+					</label>
+					<button class="order__btn btn">Оформить заказ</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script defer src="js/chief-slider.js"></script>
+	<script src="js/simplebar.js"></script>
+	<script src="libs/modal/modal.js"></script>
+	<script src="js/pop.js"></script>
+	<script src="js/cart.js"></script>
+	<script src="js/product.js"></script>
+	<script src="js/fixed-block.js"></script>
+</body>
+</html>
